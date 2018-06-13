@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-sentimask",
+  "version": "0.0.1",
+  "description": "cordova-plugin-sentimask",
+  "cordova": {
+    "id": "cordova-plugin-sentimask",
+    "platforms": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianezeani/cordova-plugin-sentimask.git"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Christian Ezeani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christianezeani/cordova-plugin-sentimask/issues"
+  },
+  "homepage": "https://github.com/christianezeani/cordova-plugin-sentimask#readme"
+}
