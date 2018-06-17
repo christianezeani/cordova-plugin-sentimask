@@ -1,5 +1,13 @@
-var exec = require('cordova/exec');
+const SMEngine = require('./SMEngine');
 
-exports.coolMethod = function (arg0, success, error) {
-    exec(success, error, 'SentiMask', 'coolMethod', [arg0]);
-};
+class SentiMask {
+
+  constructor() {  }
+
+  static create() {
+    return new SMEngine();
+  }
+
+}
+
+module.exports = SentiMask;

@@ -1,18 +1,35 @@
 <?xml version='1.0' encoding='utf-8'?>
+
 <plugin id="cordova-plugin-sentimask" version="0.0.1" 
   xmlns="http://apache.org/cordova/ns/plugins/1.0" 
   xmlns:android="http://schemas.android.com/apk/res/android">
+
   <name>SentiMask</name>
+  <description></description>
+  <license>Apache 2.0</license>
+  <keywords>cordova, sentimask, neurotechnology, christian</keywords>
+  <repo>https://github.com/christianezeani/cordova-plugin-sentimask</repo>
+  <issue>https://github.com/christianezeani/cordova-plugin-sentimask/issues</issue>
+
   <js-module name="SentiMask" src="www/SentiMask.js">
     <clobbers target="cordova.plugins.SentiMask" />
   </js-module>
+
   <platform name="android">
-    <config-file parent="/*" target="res/xml/config.xml">
+    <config-file parent="/*" target="config.xml">
       <feature name="SentiMask">
-        <param name="android-package" value="cordova-plugin-sentimask.SentiMask" />
+        <param name="android-package" onload="true" value="com.christian.sentimask.SentiMask" />
       </feature>
     </config-file>
-    <config-file parent="/*" target="AndroidManifest.xml"></config-file>
-    <source-file src="src/android/SentiMask.java" target-dir="src/cordova-plugin-sentimask/SentiMask" />
+
+    <config-file parent="/*" target="AndroidManifest.xml">
+    </config-file>
+
+    <source-file src="src/android/src/com/christian/sentimask/SentiMask.java" target-dir="src/com/christian/sentimask" />
+    <source-file src="src/android/src/com/christian/sentimask/SMBase.java" target-dir="src/com/christian/sentimask" />
+    <source-file src="src/android/src/com/christian/sentimask/SMPointF.java" target-dir="src/com/christian/sentimask" />
+    <source-file src="src/android/src/com/christian/sentimask/SMPoint3F.java" target-dir="src/com/christian/sentimask" />
+    <source-file src="src/android/src/com/christian/sentimask/SMEngine.java" target-dir="src/com/christian/sentimask" />
+    <source-file src="src/android/src/com/christian/sentimask/SMProcessingDetails.java" target-dir="src/com/christian/sentimask" />
   </platform>
 </plugin>
