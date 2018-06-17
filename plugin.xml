@@ -25,7 +25,16 @@
     <config-file parent="/*" target="AndroidManifest.xml">
     </config-file>
 
-    <source-file src="src/android/src/com/christian/sentimask/SentiMask.java" target-dir="src/com/christian/sentimask" />
+    <source-file src="libs/armeabi-v7a/libSentiMask.so" target-dir="libs/armeabi-v7a/" />
+    <source-file src="libs/armeabi-v7a/libopenblas.so" target-dir="libs/armeabi-v7a/" />
+    <source-file src="libs/armeabi-v7a/libNMediaProc.so" target-dir="libs/armeabi-v7a/" />
+    <source-file src="libs/armeabi-v7a/libNMedia.so" target-dir="libs/armeabi-v7a/" />
+    <source-file src="libs/armeabi-v7a/libNLicensing.so" target-dir="libs/armeabi-v7a/" />
+    <source-file src="libs/armeabi-v7a/libNGui.so" target-dir="libs/armeabi-v7a/" />
+    <source-file src="libs/armeabi-v7a/libNCore.so" target-dir="libs/armeabi-v7a/" />
+    <source-file src="libs/armeabi-v7a/libjnidispatch.so" target-dir="libs/armeabi-v7a/" />
+    <source-file src="libs/armeabi-v7a/libgstreamer_android.so" target-dir="libs/armeabi-v7a/" />
+
     <source-file src="src/android/src/com/christian/sentimask/SMBase.java" target-dir="src/com/christian/sentimask" />
     <source-file src="src/android/src/com/christian/sentimask/SMPointF.java" target-dir="src/com/christian/sentimask" />
     <source-file src="src/android/src/com/christian/sentimask/SMPoint3F.java" target-dir="src/com/christian/sentimask" />
