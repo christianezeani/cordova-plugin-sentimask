@@ -38,7 +38,7 @@ class SMProcessingDetails extends SMBase {
 
   getImageSpaceShapePoint3(index) {
     return new Promise((resolve, reject) => {
-      exec(resolve, reject, Config.name, 'SMProcessingDetailsGetObjectSpaceShapePoint3', [this.handle, index]);
+      exec(resolve, reject, Config.name, 'SMProcessingDetailsGetImageSpaceShapePoint3', [this.handle, index]);
     });
   }
 
